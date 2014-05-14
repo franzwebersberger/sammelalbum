@@ -14,15 +14,10 @@ $( document ).ready(function() {
 			tr = $("<tr></tr>");
 			table.append(tr);
 		}
-		td = $("<td></td>");
-		td.append(i+1);
-		td.attr("id",i+1);
-		tdbgi = "url(" + allImageUrls[i] + ")";
-		td.css("background-image", tdbgi);
-		tr.append(td);
+		tr.append($("<td></td>").attr("id",i+1).css("background-image", "url(" + allImageUrls[i] + ")").append(i+1));
 	}
-	myImages.map(function(x) {
-		$("#" + x).css("opacity", "0.8")
+	myImages.map(function(id) {
+		$("#" + id).css("opacity", "0.8")
 	});
 });
 </script>
