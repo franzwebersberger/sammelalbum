@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>sammelalbum wm 2014</title>
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="data.js" type="text/javascript"></script>
@@ -16,9 +17,13 @@ $( document ).ready(function() {
 		td = $("<td></td>");
 		td.append(i+1);
 		td.attr("id",i+1);
+		tdbgi = "url(" + allImageUrls[i] + ")";
+		td.css("background-image", tdbgi);
 		tr.append(td);
 	}
-	
+	myImages.map(function(x) {
+		$("#" + x).css("opacity", "0.8")
+	});
 });
 </script>
 </head>
