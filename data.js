@@ -1,5 +1,5 @@
 var N = 63;
-var myImages = [ 7, 8, 9, 37, 38, 41, 42, 43, 44, 45 ];
+var myImages = [ 7, 8, 9, 20, 22, 37, 38, 41, 42, 43, 44, 45, 55 ];
 
 var cols = 10;
 var allImageUrls = [];
