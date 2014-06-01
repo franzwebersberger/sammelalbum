@@ -7,7 +7,7 @@ var myImages = [  1,  2,  3,  4,  5,  6,  7,  8,  9, 10,
                  51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
                  61, 62, 63 ];
 
-var cols = 10;
+var cols = 9;
 var allImageUrls = [];
 for (i=0; i<N; i++) {
 	allImageUrls[i] = "http://www.promo2014.de/wm_sticker/desktop/img/sticker/" + (i+1) + ".jpg";
